@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&family=Montserrat:wght@500&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=PT+Serif&family=Poppins:wght@200&family=Sora:wght@100;200;300;400;500;600;700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Mulish', sans-serif;
 }
 
-:root{
+:root {
     --dark-color: #424247;
     --description-color: rgba(19, 19, 24, 0.70);
     --title-color: #131318;
@@ -17,7 +17,7 @@
     --title-font-weight: 800;
 }
 
-.primary-btn{
+.primary-btn {
     background-color: #FF5400;
     width: 174px;
     height: 52px;
@@ -26,82 +26,89 @@
     color: #fff;
 }
 
-.space{
+.description{
+    color: var(--description-color);
+    font-size: var(--description-font-size);
+}
+
+.space {
     margin-left: 4rem;
     margin-right: 4rem;
 }
 
 /* nav container styles  */
 
-.site-logo{
+.site-logo {
     display: flex;
     justify-content: left;
     align-items: center;
     gap: 1rem;
 }
 
-.discover-text, .champion-text{
+.discover-text,
+.champion-text {
     font-weight: 800;
     font-size: 2rem;
 }
 
-.discover-text{
-    color:var(--title-color);
+.discover-text {
+    color: var(--title-color);
 }
 
-.champion-text{
+.champion-text {
     color: var(--site-color);
 }
 
-.nav-container{
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 4rem;
 }
 
-.nav-container > ul{
+.nav-container>ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
 
-.nav-container > ul > li{
+.nav-container>ul>li {
     list-style: none;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     color: var(--dark-color);
     font-size: 1rem;
     font-weight: 700;
 }
 
-.active-tab{
+.active-tab {
     color: var(--site-color);
 }
+
 /* mobile-device */
 
-.menu{
+.menu {
     display: none;
     width: 1.5rem;
     height: auto;
     position: static;
 }
 
-.dropdown{
+.dropdown {
     display: none;
-}   
+}
 
-.menu a:hover .dropdown{
+.menu a:hover .dropdown {
     display: block;
     color: #FF5400;
 }
 
 /* banner container styles */
 
-.banner-container{
+.banner-container {
     background-image: url('/Images/Group\ 13\ \(1\)\ \(1\).png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -112,19 +119,19 @@ ul li a{
     margin-bottom: 3rem;
 }
 
-.banner-title{
+.banner-title {
     font-size: 4rem;
     color: #fff;
     font-weight: 800;
     margin-bottom: 1.3rem;
 }
 
-.banner-description{
+.banner-description {
     color: var(--destination-color);
     font-size: var(--description-font-size);
 }
 
-.fill-info{
+.fill-info {
     padding-top: 8px;
     padding-bottom: 8px;
     background: rgba(255, 255, 255, 0.30);
@@ -132,7 +139,8 @@ ul li a{
     margin-top: 3rem;
 }
 
-.fill-info input, select{
+.fill-info input,
+select {
     padding: 1rem;
     background: #fff;
     border-radius: 8px;
@@ -141,101 +149,182 @@ ul li a{
     color: rgba(19, 19, 24, 0.50);
     font-size: 0.8rem;
 }
+
 /* Our Popular Tours container styles  */
-.popular-tours-container{
+.popular-tours-container {
     display: flex;
     justify-content: center;
     align-items: top;
     gap: 2rem;
     margin-bottom: 3rem;
 }
-.popular-tours-content > ul{
+
+.popular-tours-content>ul {
     padding-left: 20px;
     margin: 1rem 0;
     color: var(--description-color);
 }
-.popular-tours-content > p{
+
+.popular-tours-content>p {
     color: var(--description-color);
 }
 
-.popular-tours-content > button{
+.popular-tours-content>button {
     margin-top: 20px;
 }
-.popular-tour-img img{
+
+.popular-tour-img img {
     width: 400px;
 }
-.popular-tours-title{
+
+.popular-tours-title {
     font-size: var(--title-font-size);
     font-weight: var(--title-font-weight);
     margin-bottom: 1rem;
 }
 
 /* Choose Your Destination container styles  */
-.destination-container{
+.destination-container {
     text-align: center;
     margin-bottom: 3rem;
 }
-.destination-title{
+
+.destination-title {
     font-size: var(--title-font-size);
     font-weight: var(--title-font-weight);
     color: var(--title-color);
     margin-bottom: 1rem;
 }
-.destination-description{
+
+.destination-description {
     font-size: var(--description-font-size);
     color: var(--description-color);
     margin-bottom: 2rem;
 }
-#spacial-destination-1{
+
+#spacial-destination-1 {
     grid-area: destination-1;
 }
-#spacial-destination-2{
+
+#spacial-destination-2 {
     grid-area: destination-2;
 }
-#spacial-destination-3{
+
+#spacial-destination-3 {
     grid-area: destination-3;
 }
-#spacial-destination-4{
+
+#spacial-destination-4 {
     grid-area: destination-4;
 }
-#spacial-destination-5{
+
+#spacial-destination-5 {
     grid-area: destination-5;
 }
-#spacial-destination-6{
+
+#spacial-destination-6 {
     grid-area: destination-6;
 }
-#spacial-destination-6{
+
+#spacial-destination-6 {
     width: calc(100% + 100px);
 }
-#spacial-destination-7{
+
+#spacial-destination-7 {
     margin-left: 100px;
 }
-#spacial-destination-7{
+
+#spacial-destination-7 {
     grid-area: destination-7;
 }
-.choose-destination{
+
+.choose-destination {
     display: grid;
-    grid-template-areas: 
-    "destination-1 destination-1   destination-2 destination-2"
-    "destination-3  destination-4  destination-4 destination-5"
-    "destination-6  destination-7 destination-7  destination-7";
+    grid-template-areas:
+        "destination-1 destination-1   destination-2 destination-2"
+        "destination-3  destination-4  destination-4 destination-5"
+        "destination-6  destination-7 destination-7  destination-7";
     gap: 1rem;
 }
-.destination > img{
+
+.destination>img {
     width: 100%;
     height: 300px;
 }
-.destine-data{
+
+.destine-data {
     position: relative;
     bottom: 150px;
     color: var(--destination-color);
 }
 
-.spacial-destination-1{
+.spacial-destination-1 {
     grid-column: 500px;
 
 }
+
 /* Why Choose Us container styles */
+.choose-us-container{
+    margin-bottom: 3rem;
+}
+.choose-us-title{
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    color: var(--title-color);
+    margin-bottom: 1rem;
+}
+.choose-us-content {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.choose-us-content > p{
+    color: var(--description-color);
+    font-size: var(--description-font-size);
+}
+.choose-1, .choose-2, .choose-3,  h3{
+    margin-bottom: 1rem;
+    margin-top: 1.7rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.choose-1 {
+    grid-area: choose1;
+    background: rgba(251, 181, 99, 0.05);
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    padding: 1.5rem;
+}
+
+
+.choose-2 {
+    grid-area: choose2;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding: 1.5rem;
+}
+
+.choose-3 {
+    grid-area: choose3;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    padding: 1.5rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.choose-content-info {
+    display: grid;
+    grid-template-areas:
+        "choose1 choose1   choose2  choose2"
+        "choose3 choose3   choose3  choose3";
+    gap: 1.8rem;
+}
+
+/* Newsletter container styles  */
+
+
 
 
 
@@ -246,43 +335,48 @@ ul li a{
 /* Responsive Mobile device  */
 
 @media screen and (max-width: 676px) {
-    .space{
+    .space {
         margin-left: 1rem;
         margin-right: 1rem;
         margin-top: 1rem;
     }
 
-    .nav-container > ul{
+    .nav-container>ul {
         display: none;
     }
 
-    .discover-text, .champion-text{
+    .discover-text,
+    .champion-text {
         font-weight: 700;
         font-size: 1rem;
     }
-    .site-logo{
+
+    .site-logo {
         gap: 5px;
     }
 
-    .site-logo > img{
+    .site-logo>img {
         width: 30px;
         height: auto;
     }
 
-    .nav-container > .menu{
+    .nav-container>.menu {
         display: block;
     }
-    .banner-container{
+
+    .banner-container {
         padding: 1rem;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 2rem;
         margin-bottom: 10px;
     }
-    .fill-info{
+
+    .fill-info {
         margin-top: 10px;
         display: flex;
         flex-direction: column;
@@ -290,34 +384,54 @@ ul li a{
         align-items: center;
         gap: 10px;
     }
-    .fill-info input, select, button{
+
+    .fill-info input,
+    select,
+    button {
         display: block;
     }
-    .popular-tour-img > img{
+
+    .popular-tour-img>img {
         width: 100%;
     }
-    .popular-tours-title{
+
+    .popular-tours-title {
         font-size: 2rem;
         font-weight: 700;
     }
-    .popular-tours-container{
+
+    .popular-tours-container {
         flex-direction: column;
     }
-    .choose-destination{
-        grid-template-areas: 
-        "destination-1 destination-1 destination-1 destination-1"
-        "destination-2 destination-2 destination-2 destination-2"
-        "destination-3 destination-3 destination-3 destination-3"
-        "destination-4 destination-4 destination-4 destination-4"
-        "destination-5 destination-5 destination-5 destination-5"
-        "destination-6 destination-6 destination-6 destination-6"
-        "destination-7 destination-7 destination-7 destination-7";
+
+    .choose-destination {
+        grid-template-areas:
+            "destination-1 destination-1 destination-1 destination-1"
+            "destination-2 destination-2 destination-2 destination-2"
+            "destination-3 destination-3 destination-3 destination-3"
+            "destination-4 destination-4 destination-4 destination-4"
+            "destination-5 destination-5 destination-5 destination-5"
+            "destination-6 destination-6 destination-6 destination-6"
+            "destination-7 destination-7 destination-7 destination-7";
     }
-    #spacial-destination-6{
+
+    #spacial-destination-6 {
         width: 100%;
     }
-    #spacial-destination-7{
+
+    #spacial-destination-7 {
         margin-left: 0;
+    }
+    .choose-content-info{
+        grid-template-areas: 
+        "choose1 choose1  choose1  choose1"
+        "choose2 choose2  choose2  choose2"
+        "choose3 choose3  choose3  choose3";
+    }
+
+    .choose-3{
+        width: 90%;
+        margin: 0 0;
     }
 
 }
@@ -329,22 +443,24 @@ ul li a{
 /* Responsive Tablet  device  */
 
 @media screen and (min-width: 676px) and (max-width: 960px) {
-    .space{
+    .space {
         margin-left: 2rem;
         margin-right: 2rem;
         margin-top: 2rem;
     }
-    .nav-container{
+
+    .nav-container {
         flex-direction: column;
     }
 
-    .banner-container{
+    .banner-container {
         padding: 1rem;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
-    .fill-info{
+
+    .fill-info {
         margin-top: 10px;
         display: flex;
         flex-direction: column;
@@ -352,24 +468,30 @@ ul li a{
         align-items: center;
         gap: 10px;
     }
-    .popular-tour-img > img{
+
+    .popular-tour-img>img {
         width: 100%;
     }
-    .popular-tours-container{
+
+    .popular-tours-container {
         flex-direction: column;
     }
-    .choose-destination{
-        grid-template-areas: 
-        "destination-1 destination-1 destination-2 destination-2"
-        "destination-3 destination-3 destination-4 destination-4"
-        "destination-5 destination-5 destination-6 destination-6"
-        "destination-7 destination-7 destination-7 destination-7";
+
+    .choose-destination {
+        grid-template-areas:
+            "destination-1 destination-1 destination-2 destination-2"
+            "destination-3 destination-3 destination-4 destination-4"
+            "destination-5 destination-5 destination-6 destination-6"
+            "destination-7 destination-7 destination-7 destination-7";
     }
-    #spacial-destination-6{
+
+    #spacial-destination-6 {
         width: 100%;
     }
-    #spacial-destination-7{
+
+    #spacial-destination-7 {
         margin-left: 0;
     }
+    
 
 }
