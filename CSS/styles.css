@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&family=Montserrat:wght@500&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=PT+Serif&family=Poppins:wght@200&family=Sora:wght@100;200;300;400;500;600;700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+:root{
+    --dark-color: #424247;
+    --description-color: rgba(19, 19, 24, 0.70);
+    --title-color: #131318;
+    --destination-color: #fff;
+    --site-color: #FF5400;
+    --description-font-size: 0.8rem;
+    --title-font-size: 4rem;
+    --title-font-weight: 800;
+}
+
+.primary-btn{
+    background-color: #FF5400;
+    width: 174px;
+    height: 52px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.space{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+/* nav container styles  */
+
+.site-logo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+}
+
+.discover-text, .champion-text{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.discover-text{
+    color:var(--title-color);
+}
+
+.champion-text{
+    color: var(--site-color);
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav-container > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+ul > li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.active-tab{
+    color: var(--site-color);
+}
+/* mobile-device */
+
+.menu{
+    display: none;
+    width: 1.5rem;
+    height: auto;
+    position: static;
+}
+
+.dropdown{
+    display: none;
+}   
+
+.menu a:hover .dropdown{
+    display: block;
+    color: #FF5400;
+}
+
+/* banner container styles */
+
+.banner-container{
+    background-image: url('/Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 4rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.banner-title{
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 1.3rem;
+}
+
+.banner-description{
+    color: var(--destination-color);
+    font-size: var(--description-font-size);
+}
+
+.fill-info{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    border-radius: 8px;
+    margin-top: 3rem;
+}
+
+.fill-info input, select{
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    border: none;
+    margin-right: 0.5rem;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+/* Responsive website  */
+
+/* Responsive Mobile device  */
+
+@media screen and (max-width: 676px) {
+    .space{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+    }
+
+    .nav-container > ul{
+        display: none;
+    }
+
+    .discover-text, .champion-text{
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    .site-logo{
+        gap: 5px;
+    }
+
+    .site-logo > img{
+        width: 30px;
+        height: auto;
+    }
+
+    .nav-container > .menu{
+        display: block;
+    }
+    .banner-container{
+        padding: 1rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .banner-title{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .fill-info{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .fill-info input, select, button{
+        display: block;
+    }
+}
+
+
+
+
+
+/* Responsive Tablet  device  */
+
+@media screen and (min-width: 676px) and (max-width: 960px) {
+    .space{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+    }
+    .nav-container{
+        flex-direction: column;
+    }
+
+    .banner-container{
+        padding: 1rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .fill-info{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+}

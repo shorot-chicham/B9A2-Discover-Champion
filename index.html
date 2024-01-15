@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Champion</title>
     <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://kit.fontawesome.com/b7a08eb502.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
-
+        <!-- nav section  -->
+        <nav class="nav-container space">
+            <div class="site-logo">
+                <img src="Images/Group 40071 (2).png" alt="It's just site logo icon">
+                <h2><span class="discover-text">Discover</span> <span class="champion-text">Champion</span></h2>
+            </div>
+            <ul>
+                <li><a class="active-tab" href="#">Home</a></li>
+                <li><a class="packages" href="#">Packages</a></li>
+                <li><a class="testimonial" href="#">Testimonial</a></li>
+                <li><a class="blog" href="#">Blog</a></li>
+                <li><a class="contact" href="#">Contact</a></li>
+            </ul>
+            <div class="menu">
+                <a href="#" class="menu-bar"><i class="fa-solid fa-bars"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Testimonial</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- banner section  -->
+        <section class="banner-container space">
+            <h1 class="banner-title">Explore Your Travel</h1>
+            <p class="banner-description">Explore Your Travel beckons you to wanderlust. Immerse in unique destinations, find travel inspiration, and transform your journeys into unforgettable tales</p>
+            <div class="fill-info">
+                <input type="text" name="where" id="where-text" placeholder="Where go">
+                <select name="time" id="when-info">
+                    <option value="When" selected>When</option>
+                    <option value="today">Today</option>
+                    <option value="tomorrow">Tomorrow</option>
+                    <option value="next weak">Next Weak</option>
+                    <option value="next month">Next Month</option>
+                    <option value="next year">Next Year</option>
+                </select>
+                <select name="select-type" id="type-selection">
+                    <option value="select type" selected>Select type</option>
+                    <option value="group">Group Travel</option>
+                    <option value="air travel">Air Travel</option>
+                    <option value="family">Family Travel</option>
+                    <option value="relaxation">Relaxation Travel</option>
+                </select>
+                <button class="primary-btn"><i class="fa-solid fa-magnifying-glass"></i>  Find Now</button>
+            </div>
+        </section>
+        
     </header>
     <main>
 
@@ -17,4 +68,5 @@
 
     </footer>
 </body>
+
 </html>
