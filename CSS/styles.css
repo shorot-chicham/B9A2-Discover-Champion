@@ -492,6 +492,10 @@ hr{
     .nav-container>ul {
         display: none;
     }
+    .menu:hover .nav-container > ul{
+        display: flex;
+        flex-direction: column;
+    }
 
     .discover-text,
     .champion-text {
