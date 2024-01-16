@@ -340,7 +340,40 @@ h3 {
 }
 /* Travel infographic container  */
 
+.infographic-container{
+    margin-bottom: 4rem;
+}
+.infographic-content{
+    text-align: center;
+}
+.infographic-content > h2{
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    color: var(--title-color);
+    margin-bottom: 1rem;
+}
+.infographic-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.item > img{
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+}
 
+.item{
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.30);
+}
 
 /* Newsletter container styles  */
 .newsletter-container {
@@ -553,7 +586,7 @@ hr{
     }
 
     .choose-3 {
-        width: 90%;
+        max-width: auto;
         margin: 0 0;
     }
 
@@ -569,7 +602,16 @@ hr{
         bottom: 160px;
         transform: rotate(-36deg);
     }
-
+    .infographic-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .infographic-content > h2{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .item > img{
+        width: 100%;
+    }
 }
 
 
@@ -646,6 +688,9 @@ hr{
         left: 53%;
         bottom: 200px;
         transform: rotate(-36deg);
+    }
+    .infographic-items{
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
