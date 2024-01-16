@@ -97,14 +97,7 @@ ul li a {
     position: static;
 }
 
-.dropdown {
-    display: none;
-}
 
-.menu a:hover .dropdown {
-    display: block;
-    color: #FF5400;
-}
 
 /* banner container styles */
 
@@ -514,9 +507,19 @@ hr{
         width: 30px;
         height: auto;
     }
+    
 
-    .nav-container>.menu {
+    .nav-container > .menu {
         display: block;
+    }
+    .dropdown{
+        display: none;
+    }
+    .menu > img:hover .dropdown{
+        display: block;
+    }
+    .menu > img{
+        cursor: pointer;
     }
 
     .banner-container {
